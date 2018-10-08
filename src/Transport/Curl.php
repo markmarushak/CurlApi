@@ -144,7 +144,7 @@
             }
 
             if (!$token) {
-                $header[] = "cwauth-token: " . $this->client->auth->getToken();
+                $header[] = "Authorization: Bearer " . $this->client->auth->getToken();
             }
 
             $setopt_array = array(
